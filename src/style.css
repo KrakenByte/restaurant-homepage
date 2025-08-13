@@ -1,0 +1,131 @@
+body {
+    background-color: #FCF3E4;
+    font-family: "Noto Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2A2A2A;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: #174C4F;
+    padding: 1rem 0;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: #FCEBD5;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+nav button:hover {
+    color: #D97B29;
+}
+
+
+p.restaurant-tagline {
+    color: #174C4F;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+h1.restaurant-title {
+    color: #D97B29;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    text-shadow: none;
+}
+
+.restaurant-interior {
+    border-radius: 1rem; 
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin-top: 1rem;
+}
+
+.menu-title,
+.about-title {
+    font-size: 2.2rem;
+    color: #174C4F;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #D97B29;
+    padding-bottom: 0.3rem;
+    text-align: center; 
+}
+
+
+.desserts-title,
+.mains-title,
+.starters-title {
+    text-align: center;
+    color: #D97B29;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.starters-title::after,
+.mains-title::after,
+.desserts-title::after {
+    content: "ⵣ"; 
+    color: #174C4F;
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+}
+
+/* Menu Layout */
+.section-items-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.item-container {
+    background-color: #FFF9F0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 2px solid #174C4F;
+}
+
+.menu-item-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #174C4F;
+    margin-bottom: 0.4rem;
+}
+
+.menu-item-description {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 0.4rem;
+}
+
+.menu-item-price {
+    color: #D97B29;
+    font-weight: bold;
+}
+
+.about-content {
+    font-size: 1rem;
+    max-width: 700px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 1rem;
+}
+
+.about,
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
